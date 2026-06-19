@@ -57,5 +57,29 @@ namespace BusinessLayer
             _livrosData.EditarLivro(livro);
             return null;
         }
+
+        //eleminar
+
+        public void EliminarLivro(int idLivro) 
+        {
+            _livrosData.EliminarLivro(idLivro);
+        }
+
+        //pesquisar
+
+        public List<Livro> PesquisarLivros(string texto)
+        { 
+            if (string.IsNullOrEmpty(texto))
+                return _livrosData.ListarLivros();
+
+            return _livrosData.PesquisarLivros(texto);
+        }
     }
+
+
+
+
+
+
 }
+
