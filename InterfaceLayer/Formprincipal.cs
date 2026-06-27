@@ -14,5 +14,29 @@ namespace InterfaceLayer
         {
             InitializeComponent();
         }
+
+        private void btnGerirLivros_Click(object sender, EventArgs e)
+        {
+            Formlivros form = new Formlivros();
+            form.ShowDialog();
+        }
+
+        private void btnGerirSocios_Click(object sender, EventArgs e)
+        {
+            Formsocios form = new Formsocios();
+            form.Show();
+        }
+
+        private void btnEmprestimos_Click(object sender, EventArgs e)
+        {
+            Formemprestimos form = new Formemprestimos();
+            form.Show();
+        }
+
+        private void btnestatisticas_Click(object sender, EventArgs e)
+        {
+            Formestatisticas form = new Formestatisticas();
+            form.Show();
+        }
     }
 }

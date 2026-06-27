@@ -24,5 +24,11 @@ namespace InterfaceLayer
         {
 
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Formprincipal form = new Formprincipal();
+            form.Show();
+        }
     }
 }

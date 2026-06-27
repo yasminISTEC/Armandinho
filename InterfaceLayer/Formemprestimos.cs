@@ -27,7 +27,8 @@ namespace InterfaceLayer
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Formprincipal form = new Formprincipal();
+            form.Show();
         }
     }
 }

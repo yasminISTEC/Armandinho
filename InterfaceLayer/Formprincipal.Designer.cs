@@ -17,81 +17,87 @@
 
         private void InitializeComponent()
         {
-            this.lblSistemadegestaodebiblioteca = new Label();
-
-            this.btnGerirLivros = new Button();
-            this.btnGerirSocios = new Button();
-            this.btnEmprestimos = new Button();
-            this.btnestatisticas = new Button();
-            this.button5 = new Button();
-
-            this.SuspendLayout();
-
+            lblSistemadegestaodebiblioteca = new Label();
+            btnGerirLivros = new Button();
+            btnGerirSocios = new Button();
+            btnEmprestimos = new Button();
+            btnestatisticas = new Button();
+            button5 = new Button();
+            SuspendLayout();
+            // 
             // lblSistemadegestaodebiblioteca
-            this.lblSistemadegestaodebiblioteca.AutoSize = true;
-            this.lblSistemadegestaodebiblioteca.Location = new Point(293, 9);
-            this.lblSistemadegestaodebiblioteca.Name = "lblSistemadegestaodebiblioteca";
-            this.lblSistemadegestaodebiblioteca.Size = new Size(265, 25);
-            this.lblSistemadegestaodebiblioteca.TabIndex = 0;
-            this.lblSistemadegestaodebiblioteca.Text = "Sistema de Gestão de Biblioteca";
-
+            // 
+            lblSistemadegestaodebiblioteca.AutoSize = true;
+            lblSistemadegestaodebiblioteca.Location = new Point(293, 9);
+            lblSistemadegestaodebiblioteca.Name = "lblSistemadegestaodebiblioteca";
+            lblSistemadegestaodebiblioteca.Size = new Size(265, 25);
+            lblSistemadegestaodebiblioteca.TabIndex = 0;
+            lblSistemadegestaodebiblioteca.Text = "Sistema de Gestão de Biblioteca";
+            // 
             // btnGerirLivros
-            this.btnGerirLivros.Location = new Point(381, 67);
-            this.btnGerirLivros.Name = "btnGerirLivros";
-            this.btnGerirLivros.Size = new Size(112, 34);
-            this.btnGerirLivros.TabIndex = 1;
-            this.btnGerirLivros.Text = "Gerir Livros";
-            this.btnGerirLivros.UseVisualStyleBackColor = true;
-
+            // 
+            btnGerirLivros.Location = new Point(381, 67);
+            btnGerirLivros.Name = "btnGerirLivros";
+            btnGerirLivros.Size = new Size(112, 34);
+            btnGerirLivros.TabIndex = 1;
+            btnGerirLivros.Text = "Gerir Livros";
+            btnGerirLivros.UseVisualStyleBackColor = true;
+            btnGerirLivros.Click += btnGerirLivros_Click;
+            // 
             // btnGerirSocios
-            this.btnGerirSocios.Location = new Point(381, 119);
-            this.btnGerirSocios.Name = "btnGerirSocios";
-            this.btnGerirSocios.Size = new Size(150, 34);
-            this.btnGerirSocios.TabIndex = 2;
-            this.btnGerirSocios.Text = "Gerir Sócios";
-            this.btnGerirSocios.UseVisualStyleBackColor = true;
-
+            // 
+            btnGerirSocios.Location = new Point(381, 119);
+            btnGerirSocios.Name = "btnGerirSocios";
+            btnGerirSocios.Size = new Size(150, 34);
+            btnGerirSocios.TabIndex = 2;
+            btnGerirSocios.Text = "Gerir Sócios";
+            btnGerirSocios.UseVisualStyleBackColor = true;
+            btnGerirSocios.Click += btnGerirSocios_Click;
+            // 
             // btnEmprestimos
-            this.btnEmprestimos.Location = new Point(381, 173);
-            this.btnEmprestimos.Name = "btnEmprestimos";
-            this.btnEmprestimos.Size = new Size(128, 34);
-            this.btnEmprestimos.TabIndex = 3;
-            this.btnEmprestimos.Text = "Empréstimos";
-            this.btnEmprestimos.UseVisualStyleBackColor = true;
-
+            // 
+            btnEmprestimos.Location = new Point(381, 173);
+            btnEmprestimos.Name = "btnEmprestimos";
+            btnEmprestimos.Size = new Size(128, 34);
+            btnEmprestimos.TabIndex = 3;
+            btnEmprestimos.Text = "Empréstimos";
+            btnEmprestimos.UseVisualStyleBackColor = true;
+            btnEmprestimos.Click += btnEmprestimos_Click;
+            // 
             // btnestatisticas
-            this.btnestatisticas.Location = new Point(381, 238);
-            this.btnestatisticas.Name = "btnestatisticas";
-            this.btnestatisticas.Size = new Size(112, 34);
-            this.btnestatisticas.TabIndex = 4;
-            this.btnestatisticas.Text = "Estatísticas";
-            this.btnestatisticas.UseVisualStyleBackColor = true;
-
+            // 
+            btnestatisticas.Location = new Point(381, 238);
+            btnestatisticas.Name = "btnestatisticas";
+            btnestatisticas.Size = new Size(112, 34);
+            btnestatisticas.TabIndex = 4;
+            btnestatisticas.Text = "Estatísticas";
+            btnestatisticas.UseVisualStyleBackColor = true;
+            btnestatisticas.Click += btnestatisticas_Click;
+            // 
             // button5
-            this.button5.Location = new Point(375, 322);
-            this.button5.Name = "button5";
-            this.button5.Size = new Size(112, 34);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Sair";
-            this.button5.UseVisualStyleBackColor = true;
-
+            // 
+            button5.Location = new Point(375, 322);
+            button5.Name = "button5";
+            button5.Size = new Size(112, 34);
+            button5.TabIndex = 5;
+            button5.Text = "Sair";
+            button5.UseVisualStyleBackColor = true;
+            // 
             // Formprincipal
-            this.AutoScaleDimensions = new SizeF(10F, 25F);
-            this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(800, 450);
-
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.btnestatisticas);
-            this.Controls.Add(this.btnEmprestimos);
-            this.Controls.Add(this.btnGerirSocios);
-            this.Controls.Add(this.btnGerirLivros);
-            this.Controls.Add(this.lblSistemadegestaodebiblioteca);
-
-            this.Name = "Formprincipal";
-            this.Text = "Formprincipal";
-
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button5);
+            Controls.Add(btnestatisticas);
+            Controls.Add(btnEmprestimos);
+            Controls.Add(btnGerirSocios);
+            Controls.Add(btnGerirLivros);
+            Controls.Add(lblSistemadegestaodebiblioteca);
+            Name = "Formprincipal";
+            Text = "Formprincipal";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -41,7 +41,7 @@ namespace DataLayer
             using (SqlConnection con = DBConnection.GetConnection())
             {
                 string query = @"INSERT INTO Livros (ISBN, Titulo, Autor, AnoPublicacao, ExemplaresDisponiveis) 
-                    ALUES (@ISBN, @Titulo, @Autor, @AnoPublicacao, @ExemplaresDisponiveis)";
+                    VALUES (@ISBN, @Titulo, @Autor, @AnoPublicacao, @ExemplaresDisponiveis)";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@ISBN", livro.ISBN);
                 cmd.Parameters.AddWithValue("@Titulo", livro.Titulo);

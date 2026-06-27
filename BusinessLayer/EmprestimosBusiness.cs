@@ -70,7 +70,7 @@ namespace BusinessLayer
         // =============================================
         public List<Emprestimo> ListarEmprestimos()
         {
-            return _emprestimosData.ListarEmprestimos();
+            return _emprestimosData.ListarEmprestimo();
         }
 
         // =============================================
